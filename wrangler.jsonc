@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "misskey-github-notifier",
+  "name": "misskey-github-notifier-vrc-get",
   "main": "src/index.ts",
   "compatibility_date": "2023-12-01",
   "dev": {
