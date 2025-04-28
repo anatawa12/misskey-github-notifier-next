@@ -19,14 +19,14 @@
         "avatar-optimizer": {
           "type": "github-webhook",
           "enabled": true,
-          "notifyTo": ["aao_repo"]
+          "notifyTo": ["aao-repo"]
         },
         "vrc-get": {
           "type": "github-webhook",
           "enabled": true,
-          "notifyTo": ["vrc_get_repo"]
+          "notifyTo": ["vrc-get-repo"]
         },
-        "nirila_misskey": {
+        "nirila-misskey": {
           "type": "github-webhook",
           "enabled": true,
           "notifyTo": ["repo"]
