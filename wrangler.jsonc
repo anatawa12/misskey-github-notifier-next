@@ -37,6 +37,7 @@
           "type": "misskey",
           "enabled": true,
           "config": {
+            "url": "https://misskey.niri.la",
             "defaultPostVisibility": "home"
           }
         },
@@ -44,6 +45,7 @@
           "type": "misskey",
           "enabled": true,
           "config": {
+            "url": "https://misskey.niri.la",
             "defaultPostVisibility": "home"
           }
         },
@@ -51,6 +53,7 @@
           "type": "misskey",
           "enabled": true,
           "config": {
+            "url": "https://misskey.niri.la",
             "defaultPostVisibility": "home"
           }
         }
