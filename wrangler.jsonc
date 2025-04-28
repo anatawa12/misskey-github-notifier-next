@@ -15,8 +15,46 @@
     // In addition to environment variables and secrets, you can also set Config values here.
     // Please refer to src/server/types.ts for the structure of the object.
     "CONFIG": {
-      "sources": {},
-      "destinations": {}
-    }
+      "sources": {
+        "avatar-optimizer": {
+          "type": "github-webhook",
+          "enabled": true,
+          "notifyTo": ["aao_repo"]
+        },
+        "vrc-get": {
+          "type": "github-webhook",
+          "enabled": true,
+          "notifyTo": ["vrc_get_repo"]
+        },
+        "nirila_misskey": {
+          "type": "github-webhook",
+          "enabled": true,
+          "notifyTo": ["repo"]
+        }
+      },
+      "destinations": {
+        "aao_repo": {
+          "type": "misskey",
+          "enabled": true,
+          "config": {
+            "defaultPostVisibility": "home"
+          }
+        },
+        "vrc_get_repo": {
+          "type": "misskey",
+          "enabled": true,
+          "config": {
+            "defaultPostVisibility": "home"
+          }
+        },
+        "repo": {
+          "type": "misskey",
+          "enabled": true,
+          "config": {
+            "defaultPostVisibility": "home"
+          }
+        }
+      }
+    }    
   }
 }
