@@ -33,14 +33,14 @@
         }
       },
       "destinations": {
-        "aao_repo": {
+        "aao-repo": {
           "type": "misskey",
           "enabled": true,
           "config": {
             "defaultPostVisibility": "home"
           }
         },
-        "vrc_get_repo": {
+        "vrc-get-repo": {
           "type": "misskey",
           "enabled": true,
           "config": {
