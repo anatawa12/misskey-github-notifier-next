@@ -51,7 +51,7 @@
         },
         "repo": {
           "type": "misskey",
-          "enabled": false,
+          "enabled": true,
           "config": {
             "url": "https://misskey.niri.la",
             "defaultPostVisibility": "home"
