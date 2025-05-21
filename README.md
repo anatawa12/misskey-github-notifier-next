@@ -2,6 +2,8 @@
 
 A service that forwards GitHub webhook events to Misskey as notes. This allows you to receive notifications about repository activities directly on your Misskey timeline.
 
+[Create PR from the main branch](https://github.com/anatawa12/misskey-github-notifier-next/compare/deploy...main)
+
 ## Features
 
 - Forwards various GitHub webhook events to Misskey
