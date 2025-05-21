@@ -11,7 +11,9 @@ export async function verifySignature(props: {
   const { payload, signature, webhookSecret } = props;
 
   try {
+    console.log("computing signature", Date.now());
     const computedSignature = await computeSignature(payload, webhookSecret);
+    console.log("signature computed", Date.now());
     const providedSignature = signature.replace("sha256=", "");
     if (computedSignature !== providedSignature) {
       return err({
