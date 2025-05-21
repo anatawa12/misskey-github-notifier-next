@@ -11,7 +11,9 @@ import { secureHeaders } from "hono/secure-headers";
 
 // 通知元・通知先の設定問わず必ず読み込まれるものの定義
 const notifierContextMiddleware: MiddlewareHandler<ServerEnvironment> = async (c, next) => {
+    console.log("loading config");
   const config = configLoader(env(c, getRuntimeKey()));
+    console.log("config loaded");
   c.set("config", config);
 
   const requestId = crypto.randomUUID().substring(0, 8);
