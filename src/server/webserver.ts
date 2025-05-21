@@ -57,6 +57,7 @@ export function setupServer() {
   app.use("*", containerMiddleware);
 
   app.post("/endpoint/:sourceId", (c) => {
+    console.log("starting handler");
     const sourceId = c.req.param("sourceId");
     const config = c.get("config");
     const logger = c.get("logger");
@@ -67,6 +68,7 @@ export function setupServer() {
       return c.text("Not Found", 404);
     }
 
+    console.log("starting entrypoint");
     return entrypoint(c, sourceConfig);
   });
 
