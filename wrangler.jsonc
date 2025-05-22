@@ -30,6 +30,11 @@
           "type": "github-webhook",
           "enabled": true,
           "notifyTo": ["repo"]
+        },
+        "continuous-avatar-uploader": {
+          "type": "github-webhook",
+          "enabled": true,
+          "notifyTo": ["cau-repo"]
         }
       },
       "destinations": {
@@ -50,6 +55,14 @@
           }
         },
         "repo": {
+          "type": "misskey",
+          "enabled": true,
+          "config": {
+            "url": "https://misskey.niri.la",
+            "defaultPostVisibility": "home"
+          }
+        },
+        "cau-repo": {
           "type": "misskey",
           "enabled": true,
           "config": {
