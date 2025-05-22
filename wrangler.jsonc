@@ -35,6 +35,16 @@
           "type": "github-webhook",
           "enabled": true,
           "notifyTo": ["cau-repo"]
+        },
+        "modular-avatar": {
+          "type": "github-webhook",
+          "enabled": true,
+          "notifyTo": ["ma-repo"]
+        },
+        "ndmf": {
+          "type": "github-webhook",
+          "enabled": true,
+          "notifyTo": ["ndmf-repo"]
         }
       },
       "destinations": {
@@ -63,6 +73,22 @@
           }
         },
         "cau-repo": {
+          "type": "misskey",
+          "enabled": true,
+          "config": {
+            "url": "https://misskey.niri.la",
+            "defaultPostVisibility": "home"
+          }
+        },
+        "ma-repo": {
+          "type": "misskey",
+          "enabled": true,
+          "config": {
+            "url": "https://misskey.niri.la",
+            "defaultPostVisibility": "home"
+          }
+        },
+        "ndmf-repo": {
           "type": "misskey",
           "enabled": true,
           "config": {
